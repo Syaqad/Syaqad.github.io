@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Pendaftaran</title>
+</head>
+<body>
+    <h2>Borang Pendaftaran</h2>
+
+    <form action = "https://dev.fare4z.com/"method="POST"
+    enctype="multipart/form-data" name="Borang">
+    <p>
+    <label form="name">Nama Peserta;</label>
+    <input type="text" id="nama" name="nama" placeholder="Enter your name:">
+    </p>
+    <p>
+        <label form="IC">Nombor kad pengenalan;</label>
+        <input type="number" name="IC">
+    </p>
+    <p>
+        <label form="dob">Tarikh Lahir;</label>
+        <input type="date" name="dob">
+    </p>
+    <p>
+        <label form="age">Umur;</label>
+        <input type="number" name="age">
+    </p>
+    <p>
+        <label form="gender">gender;</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+    </p>
+    <p>
+        <label form="email">Email;</label>
+        <input type="email" name="email"  placeholder="Email address:">
+    </p>
+    <p>
+        <label form="phone">Number Phone;</label>
+        <input type="number" name="phone">
+    </p>
+    <p>
+        <label for="message">Alamat Rumah</label>
+        <textarea id="message" name="message" rows="1" cols="30"></textarea>
+    </p>
+    <p>
+        <label for ="country">Select Country</label>
+        <select name="country">
+            <option value = "Aktif">Aktif</option>
+            <option value = "Tidak Aktif">Tidak Aktif</option>
+        </select>
+    </p>
+    <p>
+        <laber for="Kemahiran">Kemahiran:</laber> <br>
+        <input type="checkbox" value="HTML" name="Kemahiran[]">HTML <br>
+        <input type="checkbox" value="CSS" name="Kemahiran[]">CSS <br>
+        <input type="checkbox" value="PHP" name="Kemahiran[]">PHP <br>
+    </p>
+    <input type = "text" name="roles" value = "student" hidden>
+    <p>
+        <label form="Profile-Photo">Gambar Profile;</label>
+        <input type="file" name="uploadFile">
+    </p>
+    <p>
+        <label for="password">Kata Laluan:</label>
+        <input type ="text" name="Kata laluan">
+    </p>  
+
+
+    <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Kosongkan</button>
+    </p>
+
+    </form>
+
+</body>
+</html>
