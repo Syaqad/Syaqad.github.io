@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+
+    <form action = "https://dev.fare4z.com" method="GET"
+    enctype="multipart/form-data" name="Borang">
+    <p>
+    <label form="name">Full Name: </label>
+    <input type="text" id="name" name="name" placeholder="Enter your name:">
+    </p>
+
+    <p>
+        <label form="email">Email Address: </label>
+        <input type="Email" name="Email"  placeholder="Email address:">
+    </p>
+
+    <p>
+        <label form="phone">Number Phone: </label>
+        <input type="number" name="Phone">
+    </p>
+
+    <p>
+        <label for ="position">Position Applied: </label>
+        <select name="Position">
+            <option value = "Project Manager">Project Manager</option>
+            <option value = "Operations Manager">Operations Manager</option>
+            <option value = "Marketing Director">Marketing Director</option>
+            <option value = "Human Resources Specialist">Human Resources Specialist</option>
+            <option value = "Business Analyst">Business Analyst</option>
+        </select>
+    </p>
+
+    <p>
+        <label form="asd">Available Start Date: </label>
+        <input type="date" name="Available Start Date">
+    </p>
+
+    <p>
+        <label form="Resume">Resume: </label>
+        <input type="file" name="UploadFile">
+    </p>
+
+    <p>
+        <label for="message">Cover Letter: </label><br>
+        <textarea id="message" name="Message" rows="3" cols="30"></textarea>
+    </p>
+
+    <p>
+        <label form="etp">Employment Type Preference: </label> <br>
+        <input type="radio" name="Employment Type Preference" value="Full-time">Full-time <br>
+        <input type="radio" name="Employment Type Preference" value="Part-time">Part-time <br>
+        <input type="radio" name="Employment Type Preference" value="internship">internship <br>
+    </p>
+
+    <p>
+        <laber for="Skills">Skills: </laber> <br> 
+        <input type="checkbox" value="HTML" name="Skills[]">HTML <br>
+        <input type="checkbox" value="CSS" name="Skills[]">CSS <br> 
+        <input type="checkbox" value="Javascript" name="Skills[]">Javascript <br> 
+        <input type="checkbox" value="Python" name="Skills[]">Python <br> 
+        <input type="checkbox" value="Other" name="Skills[]"> <br> 
+    </p>
+
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+
+    </form>
+
+</body>
+</html>
